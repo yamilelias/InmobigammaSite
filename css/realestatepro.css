@@ -27,7 +27,7 @@
 /* 1. Global ------------------------------------------------------------------------------------------ 1. Global */
 
 body {
-    background-color: #fcfcfc;
+    background-color: #cacaca;
 }
 
 label {
@@ -242,7 +242,7 @@ ul.paginate-links {
 } 
 
 #top-banner {
- 	background-color: #1E8EFF;
+ 	background-color: #cacaca;
  	height: 40px;
  }
 
@@ -295,66 +295,66 @@ ul.paginate-links {
 }
 
 .navbar-default {
-	background-color: #3399FF;
+	background-color: #ffffff;
 	border: none;
-	color: #ffffff;
+	color: #000000;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #ffffff;
+	color: #000000;
 }
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover {
-	background-color: #1E8EFF;
-	color: #ffffff;
+	background-color: #FFFFFF;
+	color: #000000;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	color: #ffffff;
-	background-color: #1E8EFF;
+	color: #000000;
+	background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: #1E8EFF;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #ffffff;
-  background-color: #1E8EFF;
+  color: #000000;
+  background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a  {
-	color: #ffffff;
-	background-color: #3399ff;
+	color: #000000;
+	background-color: #FFFFFF;
 }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-	background-color: #1E8EFF;
+	background-color: #FFFFFF;
 }
 
 .nav > li > a:hover  {
-	background-color: #1E8EFF;	
+	background-color: #FFFFFF;
 }
 
 .navbar-default .navbar-brand {
-	color: #fff;
+	color: #000000;
 }
 
 .navbar-default .navbar-toggle {
-	border-color:#3399FF;
+	border-color:#FFFFFF;
 }
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #1E8EFF;
+  background-color: #FFFFFF;
   border: 1px solid #ffffff;
 }
 
@@ -499,6 +499,18 @@ form#search-form .half-width-margin {
 
 .home-page-content {
 	margin: 20px 0px 0px 0px;
+}
+
+.latest-property{
+	margin: 20px 0px 0px 0px;
+}
+
+/* Added styles for SOSTECH site */
+.content-block{
+	background: #fff;
+	border: 1px solid #eeeeee;
+	padding: 15px 10px 10px 10px;
+	overflow: auto;
 }
 
 
@@ -1078,10 +1090,11 @@ span.error {
 /* 20. Footer ---------------------------------------------------------------------------------------- 20. Footer */
 
 #footer {
-	background-color: #3399FF;
+	background-color: #ffffff;
 	margin-top: 30px;
 	min-height: 50px;
 	padding-top: 20px;
+	color: #000;
 }
 
 #footer p {
@@ -1109,21 +1122,28 @@ span.error {
 	 bottom: 10px;
 	 right: 10px;
 	 display: none;
-	 background: #888888;
+	 background: #fff;
 	 border: 1px solid #eeeeee;
 	 border-radius: 10px;
-	 color: #fff;
+	 color: #cacaca;
 	 font-size: 1.5em;
 	 text-decoration: none;
 	 padding: 5px 10px 5px 10px;
-	}
+}
 
 .scrollUpButton:hover {
 	 text-decoration: none;
+	 background: transparent;
 	 color: #fff;
 	 opacity: 1;
-	}
+}
 
+.scrollUpButton:focus{
+	text-decoration: none !important;
+	background: #fff !important;
+	color: #cacaca !important;
+	opacity: 1 !important;
+}
 
 /* 22. Property Details Admin -------------------------------------------------------- 22. Property Details Admin */
 
