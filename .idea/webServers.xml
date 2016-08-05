@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="782478ea-f23e-4a20-8bc3-1920b6e61233" name="Local Wordpress" url="http://localhost">
+        <fileTransfer port="0" mountedRoot="/var/www/html/wp-content/themes/realstatepro" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

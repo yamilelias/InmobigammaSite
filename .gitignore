@@ -1,3 +1,4 @@
+#Exclude Wordpress files
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -16,3 +17,8 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+#Exclude Windows desktop.ini
+dektop.ini
+
+#Exclude IDEA folder
+.idea
