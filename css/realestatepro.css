@@ -1,0 +1,1132 @@
+/* CSS Index 
+
+1. Global 
+2. Typography
+3. Page Style
+4. Logo
+5. Widgets
+6. Pagination
+7. Top Banner
+8. Nav Bar
+9. Home Page Slider
+10. Home Page Search Form
+11. Home Page Content
+12. Home Page Featured Properties
+13. Property Details Page
+14. Property Search Results Listings
+15. Property Search Widget
+16. Mortgage Calculator Widget
+17. Blog 
+18. Contact Form
+19. Sidebar
+20. Footer
+21. Scroll to Top
+22. Property Details Admin
+
+
+/* 1. Global ------------------------------------------------------------------------------------------ 1. Global */
+
+body {
+    background-color: #fcfcfc;
+}
+
+label {
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-weight: normal;
+}
+
+.no-margin {
+	margin: 0px;
+	padding: 0px
+} 
+
+.no-margin-left { 
+	margin: 0; 
+	padding-left: 0px;
+} 
+
+.no-margin-right { 
+	margin: 0; 
+	padding-right: 0px;
+}
+
+hr {
+	border-color: #e8e8e8;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+hr.hrcolor2 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #e6e6e6 -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+ul, ol {
+	padding: 0px;
+}
+
+.standard-button {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    background-color: #3399FF;
+    border:0px solid #005195;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:21px;
+    height:40px;
+    margin-top: 25px;
+}
+
+#standard-button, #standard-button:hover {
+	display: block;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    background-color: #3399FF;
+    background-image: none;
+    border: 0px solid #005195;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:21px;
+    height:40px;
+    vertical-align: middle;
+    text-decoration:none;
+    padding-top: 8px;
+}
+
+img {
+	display:block; 
+	width:100%; 
+	height:auto;
+}
+
+/* 2. Typography ---------------------------------------------------------------------------------  2. Typography */
+
+h1 {
+	font-size: 24px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 20px	
+}
+
+h3 {
+	font-size: 18px;
+	margin-top: 10px;
+
+}
+
+h4 {
+	font-size: 16px;
+}
+
+
+a.unstyledlink:link,a.unstyledlink:visited,a.unstyledlink:active,a.unstyledlink:hover {
+	text-decoration: none;
+	color: #333333;
+}
+
+
+/* 3. Page Style ---------------------------------------------------------------------------------  3. Page Style */
+
+.page-style {
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	min-height: 800px;
+	overflow: auto;
+	padding: 10px;
+}
+
+
+/* 4. Logo ---------------------------------------------------------------------------------------------  5. Logo */
+
+.logo {
+	/*height: 50px;
+	width: 200px;*/
+}
+
+.logo img {
+	padding-top: 10px;
+}
+
+
+/* 5. Widgets ---------------------------------------------------------------------------------------  5. Widgets */
+
+.realestatepro-widget-header {
+	background-color: #f7f7f7;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #eeeeee;
+	margin-top: 30px;
+}
+
+.realestatepro-widget-header h1 {
+	margin: 15px 0px;
+	text-align: center;
+	color: #333333;
+}
+
+.realestatepro-widget-body {
+	background-color: #ffffff;
+	overflow: hidden;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/* 6. Pagination ---------------------------------------------------------------------------------  6. Pagination */
+ 
+
+.paginate-links {
+  display: block;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+ul.paginate-links {
+  list-style-type: none;
+}
+
+.paginate-links li a {
+  display: block;
+  float: left;
+  color: #717171;
+  background: #e9e9e9;
+  text-decoration: none;
+  padding: 5px 7px;
+  margin-right: 6px;
+  border-radius: 3px;
+  border: solid 1px #c0c0c0;
+  text-shadow: 1px 1px 0px rgba(255,255,255, 0.7);
+}
+
+.paginate-links li a {
+  background: #eee;
+  color: #555;
+}
+
+.paginate-links li.active a {
+  display: block;
+  float: left;
+  background: #d3d3d3;
+  border: solid 1px #c0c0c0;
+  padding: 5px 7px;
+  margin-right: 6px;
+  border-radius: 3px;
+  color: #444;
+}
+
+.paginate-links li.active a:hover {
+	text-decoration: none;
+}
+
+
+/* 7. Top Banner ---------------------------------------------------------------------------------- 7. Top Banner */
+
+.glyphicon {
+	padding-right: 5px;
+} 
+
+#top-banner {
+ 	background-color: #1E8EFF;
+ 	height: 40px;
+ }
+
+#top-banner-email, #top-banner-telephone {
+ 	line-height: 20px;
+ 	margin-top: 10px;
+ 	color: #ffffff;
+}
+
+#top-banner-email {
+	text-align: right;
+	padding-right: 0px;
+}
+
+#top-banner-telephone {
+	text-align: right;
+	padding-left: 5px;
+
+}
+
+@media (max-width: 767px) {
+
+	#top-banner {
+	 	height: 60px;
+	 }
+
+	 #top-banner-email {
+		text-align: center;
+		padding-right: 15px;
+	}
+
+	#top-banner-telephone {
+		text-align: center;
+	}
+
+}
+
+
+/* 8. Nav Bar ---------------------------------------------------------------------------------------- 8. Nav Bar */
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar {
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.navbar-default {
+	background-color: #3399FF;
+	border: none;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+	background-color: #1E8EFF;
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: #ffffff;
+	background-color: #1E8EFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #1E8EFF;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #1E8EFF;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a  {
+	color: #ffffff;
+	background-color: #3399ff;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: #1E8EFF;
+}
+
+.nav > li > a:hover  {
+	background-color: #1E8EFF;	
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	border-color:#3399FF;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1E8EFF;
+  border: 1px solid #ffffff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffffff;
+}
+
+
+/* 9. Home Page Slider ---------------------------------------------------------------------- 9. Home Page Slider */
+
+.slider-wrapper {
+	margin-bottom: 30px;
+}
+
+.caption {
+	background-color: #006699;
+	margin: 0px auto;
+	opacity: 0.9;
+	width: 980px;
+	z-index: 3040;
+}
+
+.theme-default .nivo-caption {
+	background: #ffffff;
+	left: 20%;
+	margin: 0px auto;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	z-index: 8;
+}
+
+.theme-default .nivo-directionNav a {
+	opacity: 1!important;
+}
+
+.nivo-title {
+	font-size: 26px;
+	color: #888888;
+	font-weight: bold;
+}
+
+.nivo-featured-text-1 {
+	font-size: 20px;
+	color: #888888;
+}	
+
+.nivo-featured-text-2 {
+	font-size: 16px;
+	color: #006699;
+	font-weight: bold;
+}	
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.theme-default .nivo-caption {
+		top: 40%;
+		max-height: 90px;
+		left: 12.5%;
+		max-width: 75%!important;
+	}
+
+	.nivo-title {
+		font-size: 14px;
+		color: #000000;
+		font-weight: bold;
+	}
+
+	.nivo-featured-text-1 {
+		font-size: 14px;
+		color: #000000;
+	}	
+
+	.nivo-featured-text-2 {
+		font-size: 14px;
+		color: #006699;
+		font-weight: bold;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.theme-default .nivo-caption {
+		font-size: 16px;
+		height: auto;
+		left: 10%;
+		width: auto;
+	}
+	.nivo-title {
+		font-size: 14px;
+		color: #000000;
+		font-weight: bold;
+	}
+
+	.nivo-featured-text-1 {
+		font-size: 14px;
+		color: #000000;
+	}	
+
+	.nivo-featured-text-2 {
+		font-size: 14px;
+		color: #006699;
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 992px) {
+
+	.theme-default .nivo-caption {
+		font-size: 28px;
+		left: 20%;
+	}
+
+}
+
+
+/* 10. Home Page Search Form ---------------------------------------------------------- 10. Home Page Search Form */
+
+.home-page-search-form {
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	overflow: auto;
+	padding: 15px 10px 10px 10px
+}
+
+.homepage-form-width {
+	margin: 0px auto;
+	width: 100%;
+}
+
+form#search-form .homepage-format {
+	margin-bottom: 10px;
+}
+
+form#search-form .half-width-margin {
+	margin-right: 10px;
+}
+
+
+/* 11. Home Page Content ------------------------------------------------------------------ 10. Home Page Content */
+
+.home-page-content {
+	margin: 20px 0px 0px 0px;
+}
+
+
+/* 12. Home Page Featured Properties ------------------------------------------ 12. Home Page Featured Properties */
+
+.featured-properties {
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	margin-bottom: 25px;
+	overflow: auto;
+	padding: 10px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+	box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+}
+
+.featured-properties img {
+	display: block;
+	max-height:100%;
+	max-width:100%;
+	overflow: hidden;
+} 
+
+.featured-properties h5 {
+	color: #000000;
+	left: 5px;
+	position: absolute;
+	top: 152px;
+}
+
+.featuredlabel {
+   background: #ffffff;
+   left: 5px;
+   opacity: 0.8;
+   padding: 2.5px 10px;
+   position: absolute; 
+   bottom: 5px;
+   max-width: 95%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.featured-properties  {
+	}
+
+	.featuredlabel {
+	   left: 10px;
+	   bottom: 10px;
+	   font-size: 24px;
+
+	}
+}
+
+@media (max-width: 991px) {
+
+	.featured-properties  {
+	}
+
+	.featuredlabel {
+	   font-size: 20px;
+	}
+}
+
+
+/* 13. Property Details Page ---------------------------------------------------------- 13. Property Details Page */
+
+a.back-to-search {
+	float: right;
+	margin-top: 13px;
+}
+
+.property-image img {
+	display: block;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+} 
+
+ul.property-features {
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	float: left;
+	height: 40px;
+	margin-top: 25px;
+	padding: 10px; 
+	width: 100%;
+}
+
+.property-features li {
+	border-right: 1px solid #e8e8e8;
+	color: #222222;
+	display: inline;
+	line-height: 100%;
+	list-style: none;
+	padding: 10px 15px 10px 10px;
+
+}
+
+.ammenities li {
+	list-style: inside none square;
+	color: #3399FF;
+}
+
+.ammenities li span {
+	color: #333333;
+}
+
+.google-map {
+	border: #cccccc solid 1px;
+	height: 400px;
+	margin: 20px 0;
+	width: 100%;
+}
+
+ /* fixes potential theme css conflict */
+.google-map img {
+   max-width: inherit !important;
+}
+
+
+@media (max-width: 380px) {
+
+	ul.property-features {
+		height: 180px;
+		line-height: 40px;
+	}
+}
+
+@media (min-width: 381px) and (max-width: 600px) {
+
+	ul.property-features {
+		height: 100px;
+		line-height: 40px;
+	}
+}
+
+
+/* 14. Property Search Results Listings ------------------------------------ 14. Property Search Results Listings */
+
+.listings h3 {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+#search-results {
+	margin-top: 10px;
+}
+
+#search-results-container-tools {
+	background-color: #f7f7f7;
+	font-size: 12px;
+	height: 40px;
+	width: 100%;
+	margin: 10px 0px 40px 0px;
+	padding: 0px;
+	border: 1px solid #e0e0de;
+}
+
+#search-results-container-results {
+	float: left;
+	padding: 10px;
+	width: 50%;
+	
+}
+
+#search-results-container-sort {
+	width: 50%;
+	float: left;
+	padding: 7px;
+}
+
+select#listing-results-sort-options {
+  	background-color: #ffffff;
+  	border: 1px solid #e0e0de;
+  	font-size: 12px;
+  	height: 25px;
+  	margin: 0px 2px 0px 2px;
+  	padding: 0px 5px 0px 5px;
+  	width: 100px;
+}
+
+form#listings-sort {
+	float: right;
+	margin-bottom: 5px;
+
+}
+
+.no-results-featured-properties {
+	min-height: 350px;
+}
+
+@media (max-width: 480px) {
+
+	#search-results-container-tools {
+		height: 70px;
+	}
+
+	#listing-results-sort-options {
+		width: 140px;
+	}
+
+}
+
+@media (max-width: 991px) {
+
+	.listing-thumbnail {
+		padding: 15px;
+		margin: 0px;
+	}
+
+	.listings {
+		padding-bottom: 15px;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+	.listing-thumbnail {
+		padding: 0px;
+		margin: 0px;
+	}
+}
+
+
+/* 15. Property Search Widget -------------------------------------------------------- 15. Property Search Widget */
+
+.widget-form-width {
+	margin: 0px auto;
+}
+
+.search-widget-form {
+	background-color: #ffffff;
+	overflow: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#search-form select, #search-form input {
+	background-color: #ffffff;
+  	border: 1px solid #e0e0de;
+  	font-family: arial;
+  	font-size: 14px;
+  	height: 30px;
+  	line-height: 25px;
+  	margin: 5px 5px 5px 0px;
+  	padding: 5px;
+  	width: 100%;
+}
+
+form#search-form div.search-input {
+	position: relative;
+}
+
+form#search-form label {
+	display: block;
+}
+
+form#search-form .widget-format {
+	margin-bottom: 10px;
+}
+
+form#search-form .half-width-margin {
+	margin-right: 10px;
+}
+
+.search-button {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    background-color: #3399FF;
+    border:0px solid #005195;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:21px;
+    height:40px;
+    margin-top: 25px;
+}
+
+form#search-form .smalldropdown-first {
+	margin-right: 10px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+form#search-form .smalldropdown {
+	margin-right: 0px;
+	padding-right: 0px;
+	width: 100%;
+	float: right;
+}
+
+form#search-form #rsrent{
+  	display: none;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	form#search-form .smalldropdown-first {
+	margin-right: 10px;
+	padding-right: 0px;
+	width: 100%;
+	}
+
+	form#search-form .smalldropdown {
+	margin-right: 0px;
+	padding-right: 0px;
+	width: 100%;
+	}
+
+	.search-button {
+	margin-top: 29px;
+    height: 40px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	form#search-form .smalldropdown-first {
+	margin-right: 10px;
+	padding-right: 0px;
+	width: 100%;
+	}
+
+	form#search-form .smalldropdown {
+	margin-right: 0px;
+	padding-right: 0px;
+	width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	form#search-form .smalldropdown-first {
+	margin-right: 10px;
+	padding-right: 0px;
+	width: 97%;
+	}
+
+	form#search-form .smalldropdown {
+	margin-right: 0px;
+	padding-right: 0px;
+	width: 97%;
+	}
+}
+
+
+/* 16. Mortgage Calculator Widget ------------------------------------------------ 16. Mortgage Calculator Widget */
+
+label.mortgage-calculator-label {
+}
+
+.mortgage-results {
+	text-align: center;
+}
+
+.mortgage-results-label {
+	margin-top: 10px;
+}
+
+.mortgage-calculator-results {
+	border: 2px solid #dfeff0;
+	height: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.mortgage-calculator-inputs {
+	width:100px;
+	float:right;
+	margin-bottom:10px;
+	text-align: center;
+}
+
+.widget-mortgage-calculator-width {
+	margin: 0px auto;
+	width: 90%;
+}
+
+.mortgage-calculator-button {
+	display: block;
+	padding: 0px;
+	width: 100%;
+    background-color: #3399FF;
+    border:0px solid #005195;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:21px;
+    height:40px;
+    margin-top: 25px;
+}
+
+@media (max-width: 787px) {
+
+	.widget-mortgage-calculator-width {
+		margin: 0px 15px;
+		width: 100%;
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 1199px) {
+
+	.mortgage-calculator-inputs	{
+		width: 100%;
+	}
+
+}
+
+
+/* 17.Blog ---------------------------------------------------------------------------------------------- 17.Blog */
+
+.blog-archive {
+	margin-top: 30px;
+}
+
+.blog-archive h3 {
+	margin-top: 0px;
+}
+
+.blog-posts	{
+	-moz-box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	box-shadow: 5px 5px 5px 0px rgba(230,230,230,1);
+	margin-bottom: 50px;
+	overflow: auto;
+}
+
+.blog-posts img {
+	height: 100%;
+	margin: 30px 0px 10px 0px;
+	overflow: hidden;	
+	width: 100%;
+}
+
+.blog-posts-excerpt {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.blog-paginate-newer {
+	text-align: left;
+}
+
+.blog-paginate-older {
+	text-align: right;
+}
+
+.post-link { 
+	float:right;
+}
+
+.blog-article {
+	margin-top: 10px;
+
+}
+
+.blog-article img {
+	height: auto;
+	max-width: 100%;
+	margin: 10px 0px;
+}
+
+#blog-search-form select, #blog-search-form input {
+	background-color: #ffffff;
+  	border: 1px solid #e0e0de;
+  	font-family: arial;
+  	font-size: 14px;
+  	height: 30px;
+  	line-height: 25px;
+  	margin: 5px 5px 5px 0px;
+  	padding: 5px;
+  	width: 100%;
+}
+
+.blog-search-results-page-title {
+	padding-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+
+	.blog-posts	{
+		margin-top: 25px;
+	}
+
+}
+
+
+/* 18.Contact Form ------------------------------------------------------------------------------ 18.Contact Form */
+
+.contact-form-button {
+	display: block;
+	padding: 0px;
+	width: 100%;
+    background-color: #3399FF;
+    border:0px solid #005195;
+    color:#ffffff;
+    cursor:pointer;
+    font-size:21px;
+    height:40px;
+    margin-top: 25px;
+}
+
+#contact-form select, #contact-form input {
+	background-color: #ffffff;
+  	border: 1px solid #e0e0de;
+  	font-family: arial;
+  	font-size: 14px;
+  	height: 30px;
+  	line-height: 25px;
+  	margin: 5px 5px 5px 0px;
+  	padding: 5px;
+  	width: 100%;
+}
+
+#contact-form textarea {
+	background-color: #ffffff;
+  	border: 1px solid #e0e0de;
+  	font-family: arial;
+  	font-size: 14px;
+  	height: 150px;
+  	line-height: 25px;
+  	margin: 5px 5px 5px 0px;
+  	padding: 5px;
+  	width: 100%;
+}
+
+.message-label {
+	padding-top: 10px;
+}
+
+span.error {
+	background-color: #FFE4E1; 
+	padding: 2px;
+}
+
+/* 19. Sidebar -------------------------------------------------------------------------------------- 19. Sidebar */
+
+.left-sidebar {
+	float: left;
+
+}
+
+.right-sidebar {
+	float: right;
+}
+
+@media (max-width: 991px) {
+
+	.wrapper {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+    	-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+    	-webkit-flex-direction: column;
+    	    -ms-flex-direction: column;
+    	        flex-direction: column;
+	}
+	
+	.sidebar {
+		order: 2;
+	}
+
+	.feature {
+		order: 1;
+	}
+}
+
+
+/* 20. Footer ---------------------------------------------------------------------------------------- 20. Footer */
+
+#footer {
+	background-color: #3399FF;
+	margin-top: 30px;
+	min-height: 50px;
+	padding-top: 20px;
+}
+
+#footer p {
+	color: #fff;
+}
+
+.footer-company-info span {
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+ 
+.footer-link:link,.footer-link:hover, .footer-link:visited,.footer-link:active {
+	color: #ffffff;
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+
+
+/* 21. Scroll to top -------------------------------------------------------------------------- 21. Scroll to top */
+
+.scrollUpButton {
+	 display: none;
+	 opacity: 0.6;
+	 position: fixed;
+	 bottom: 10px;
+	 right: 10px;
+	 display: none;
+	 background: #888888;
+	 border: 1px solid #eeeeee;
+	 border-radius: 10px;
+	 color: #fff;
+	 font-size: 1.5em;
+	 text-decoration: none;
+	 padding: 5px 10px 5px 10px;
+	}
+
+.scrollUpButton:hover {
+	 text-decoration: none;
+	 color: #fff;
+	 opacity: 1;
+	}
+
+
+/* 22. Property Details Admin -------------------------------------------------------- 22. Property Details Admin */
+
+#poststuff .stuffbox > h3, #poststuff h2, #poststuff h3.hndle  {
+	display: none!important;
+}
