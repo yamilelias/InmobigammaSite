@@ -40,29 +40,18 @@
 								    $ref_url = wp_get_referer();
 
 									if (strpos($ref_url, 'min_val_buy') !== FALSE) ?>
-									    <span><a href="#" class="back-to-search" onClick="javascript:window.history.back()">De vuelta a Resultados</a><span>
+									    <span><a href="#" class="back-to-search" onClick="javascript:window.history.back()">Página anterior</a><span>
 							</div>
 
 							<div class="col-xs-12 col-sm-8 col-md-8 text-left">
-								<h2><?php the_field('sub_title'); ?>,
-							
-								<?php if (get_field('sale_or_rent')=='sale' ) { ?>
-
-									<?php echo $GLOBALS['theme_settings']['currency'].number_format(get_field('property_price'), 0); ?>
-								
-								<?php } else { ?>
-
-									<?php echo $GLOBALS['theme_settings']['currency'].number_format(get_field('property_price'), 0).$GLOBALS['theme_settings']['rental_period']; ?>
-
-								<?php } ?>
-							</h2>
+								<h2><?php the_field('sub_title'); ?></h2>
 							</div>
 
 							<?php if(get_field('property_reference') ) 
 
 							{?>
 								<div class="col-xs-12 col-sm-4 col-md-4 text-right">
-									<h2>Referencia: <?php the_field('property_reference'); ?></h2>
+									<h2><b>Referencia:</b> <?php the_field('property_reference'); ?></h2>
 								</div>
 							<?php } ?>
 
@@ -86,25 +75,30 @@
 
 							<div class="col-xs-12 col-sm-12 col-md-12">
 								<ul class="property-features">
-									<li>Cuartos: <?php the_field('number_of_bedrooms'); ?></li>
-									<li>Baños: <?php the_field('number_of_bathrooms'); ?></li>
-									<li>Salas: <?php the_field('number_of_reception_rooms'); ?></li>
+									<li><b>Cuartos:</b> <?php the_field('number_of_bedrooms'); ?></li>
+									<li><b>Baños:</b> <?php the_field('number_of_bathrooms'); ?></li>
+									<li><b>Salas:</b> <?php the_field('number_of_reception_rooms'); ?></li>
 									<li>
 										<?php 
-										if( get_field('parking') == 'yes') 
-											{
-												echo 'Estacionamiento: Si';
-											}
-										else { ?>
-											Estacionamiento: No
-										<?php } ?>	
+										if( get_field('parking') == 'yes'): echo '<b>Estacionamiento:</b> Si'; else: echo '<b>Estacionamiento:</b> No'; endif; ?>
+									</li>
+									<li> <b>Precio:</b>
+										<?php if (get_field('sale_or_rent')=='sale' ) { ?>
+
+											<?php echo $GLOBALS['theme_settings']['currency'].number_format(get_field('property_price'), 0); ?>
+
+										<?php } else { ?>
+
+											<?php echo $GLOBALS['theme_settings']['currency'].number_format(get_field('property_price'), 0).$GLOBALS['theme_settings']['rental_period']; ?>
+
+										<?php } ?>
 									</li>
 								</ul>
 							</div>
 
 							<div class="col-xs-12 col-sm-12 col-md-12">
 								<h3>Detalles de la Propiedad</h3>
-								<p><?php the_field('property_details'); ?></p>
+								<div class="details-block"><?php the_field('property_details'); ?></div>
 							</div>					
 
 							<?php if(get_field('amenities') ) 
@@ -113,7 +107,7 @@
 
 								<div class="col-xs-12 col-sm-12 col-md-12 ammenities">
 									<h3>Comodidades</h3>
-									<ul>
+									<ul class="details-block">
 										<?php 
 										$ammenities = explode(PHP_EOL, get_field('amenities'));
 										foreach ($ammenities as $ammenity) {
@@ -131,7 +125,7 @@
 
 								<div class="col-xs-12 col-sm-12 col-md-12">
 									<h3>Detalles del Agente</h3>
-									<p><?php the_field('agent'); ?></p>
+									<div class="details-block"><?php the_field('agent'); ?></div>
 								</div>	
 
 							<?php } ?>

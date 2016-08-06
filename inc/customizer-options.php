@@ -58,7 +58,7 @@ if ( class_exists( 'Kirki' ) ) {
 
 	/* Add a Section for Navigation Menu */
 	Kirki::add_section( 'realestatepro_nav_menu', array(
-		'title'          => esc_attr__( 'Navigation Menu Style', 'realestatepro' ),
+		'title'          => esc_attr__( 'Estilo del Menú de Navegación', 'realestatepro' ),
 		'priority'       => 3,
 		'capability'     => 'edit_theme_options',
 	    'description' => __( 'Editar el estilo del Menú de Navegación.', 'realestatepro' ),
