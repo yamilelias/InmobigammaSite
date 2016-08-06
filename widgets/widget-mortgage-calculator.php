@@ -8,6 +8,8 @@ add_action( 'widgets_init', function(){
  * Adds Mortgage Calculator Widget. Note that when the Calculate button is pressed the function 'validate_mortgage_calculator_form' is called this is located in the js/realestatepro.js file.
  */
 class Mortgage_Calculator_widget extends WP_Widget {
+
+
 	/**
 	 * Register widget with WordPress.
 	 */
@@ -28,13 +30,20 @@ class Mortgage_Calculator_widget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		echo '<div class="realestatepro-widget-header">';
-	
+
+			if($instance['title'])
+				$title = $instance['title'];
+			else
+				$title = "Calculadora de Hipoteca";
+
 	     	echo $args['before_widget'];
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 			}
 
 			echo '<div class="realestatepro-widget-body">';
+
+				echo '<h2 class="text-center">' . $title . '</h2>';
 
 				echo '<form id="mortgage-calculator-form" action="" method="post" target="_self" class="widget-mortgage-calculator-width">';
 
@@ -50,14 +59,16 @@ class Mortgage_Calculator_widget extends WP_Widget {
 
 				echo '<div class="mortgage-results">';
 
+					echo '<h3> Resultados </h3>';
+
 					echo '<label class="mortgage-results-label">Cantidad de la Hipoteca ('.$GLOBALS['theme_settings']['currency'].')</label>';
-					echo '<input type="text" id="Mortgage" name="Mortgage" readonly value="" class="mortgage-calculator-results">';				
+					echo '<input type="text" id="Mortgage" name="Mortgage" readonly disabled value="" class="mortgage-calculator-results disabled">';
 
 					echo '<label class="mortgage-results-label">Por mes, sólo el interés ('.$GLOBALS['theme_settings']['currency'].')</label>';
-					echo '<input type="text" id="Repayment" name="Repayment" readonly value="" class="mortgage-calculator-results">';
+					echo '<input type="text" id="Repayment" name="Repayment" readonly disabled value="" class="mortgage-calculator-results disabled">';
 
 					echo '<label class="mortgage-results-label">Por mes, pago por hipoteca ('.$GLOBALS['theme_settings']['currency'].')</label>';
-					echo '<input type="text" id="Interest" name="Interest" readonly value="" class="mortgage-calculator-results">';
+					echo '<input type="text" id="Interest" name="Interest" readonly disabled value="" class="mortgage-calculator-results disabled">';
 
 				echo '</div>';
 				

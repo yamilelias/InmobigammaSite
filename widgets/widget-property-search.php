@@ -33,12 +33,19 @@ class Property_Search_Widget extends WP_Widget {
 	
 		echo '<div class="realestatepro-widget-header">';
 
-	     	echo $args['before_widget'];
+			if($instance['title'])
+				$title = $instance['title'];
+			else
+				$title = "Búsqueda de Propiedades";
+
+			echo $args['before_widget'];
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ). $args['after_title'];
 			}
 
 			echo '<div class="realestatepro-widget-body">';
+
+				echo '<h2 class="text-center">'.$title.'</h2>';
 
 				$formwidth 			= "widget-form-width";
 				$inputclass			= "widget-format";

@@ -76,34 +76,31 @@ ul, ol {
 
 .standard-button {
 	display: block;
-	margin: 0px;
 	padding: 0px;
 	width: 100%;
-    background-color: #3399FF;
-    border:0px solid #005195;
+    background-color: #5d0208;
+    border:0px solid #000000;
     color:#ffffff;
     cursor:pointer;
     font-size:21px;
     height:40px;
-    margin-top: 25px;
+	margin: 25px 0px 0px;
 }
 
 #standard-button, #standard-button:hover {
 	display: block;
 	border-radius: 0px;
 	margin: 0px;
-	padding: 0px;
 	width: 100%;
-    background-color: #3399FF;
-    background-image: none;
-    border: 0px solid #005195;
+	background: #5d0208 none;
+	border: 0px solid #000000;
     color:#ffffff;
     cursor:pointer;
     font-size:21px;
     height:40px;
     vertical-align: middle;
     text-decoration:none;
-    padding-top: 8px;
+	padding: 8px 0px 0px;
 }
 
 img {
@@ -908,8 +905,8 @@ label.mortgage-calculator-label {
 	display: block;
 	padding: 0px;
 	width: 100%;
-    background-color: #3399FF;
-    border:0px solid #005195;
+    background-color: #5d0208;
+    border:0px solid #000000;
     color:#ffffff;
     cursor:pointer;
     font-size:21px;
@@ -1109,16 +1106,16 @@ span.error {
 }
 
 #footer p {
-	color: #fff;
+	color: #000;
 }
 
 .footer-company-info span {
-	color: #ffffff;
+	color: #000;
 	margin-bottom: 15px;
 }
  
 .footer-link:link,.footer-link:hover, .footer-link:visited,.footer-link:active {
-	color: #ffffff;
+	color: #808080;
 	margin-bottom: 15px;
 	text-decoration: none;
 }

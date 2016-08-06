@@ -62,7 +62,7 @@ class Featured_Property_Widget extends WP_Widget {
 
 
 
-										<h4>Featured Property</h4>
+										<h4>Propiedades Destacadas</h4>
 
 										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><img src="<?php the_field('property_image_1');?>"></a>
 										<h5><span><?php the_title(); ?></span></h5>				

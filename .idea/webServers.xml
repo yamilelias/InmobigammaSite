@@ -5,6 +5,14 @@
       <webServer id="782478ea-f23e-4a20-8bc3-1920b6e61233" name="Local Wordpress" url="http://localhost">
         <fileTransfer port="0" mountedRoot="/var/www/html/wp-content/themes/realstatepro" accessType="MOUNT" />
       </webServer>
+      <webServer id="6ee12e55-92c7-44a4-b52c-60b28d1a5f21" name="Ventas Inmobigamma" url="http://sostech.com.mx">
+        <fileTransfer host="sostech.com.mx" port="21" password="df93dfd4dfe0df91df8edf82dfe2dfe4dfeddfdadfecdfe8df9bdf9edf92dfe1dfcddf9c" username="sostechc">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
