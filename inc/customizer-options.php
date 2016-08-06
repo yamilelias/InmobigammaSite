@@ -130,6 +130,42 @@ if ( class_exists( 'Kirki' ) ) {
 		'description' => esc_attr__( 'Seleccionar el favicon de tu Sitio. Debe estar en formato ICO.', 'realestatepro' ),
 		'priority'    => 10,
 	) );
+	
+	/* Add a field to change background picture/color */
+	/*Kirki::add_field( 'realestatepro_settings', array(
+		'type'        => 'upload',
+		'settings'    => 'realestatepro_background',
+		'label'       => esc_attr__( 'Fondo del Sitio', 'realestatepro' ),
+		'default'     => esc_attr__( '', 'realestatepro' ),
+		'section'     => 'realestatepro_settings',
+		'description' => esc_attr__( 'Selecciona la imagen que deseas que aparezca como el fondo del sitio. Si no eliges alguno se pondrá un color por default.', 'realestatepro' ),
+		'priority'    => 10,
+			'output' => array(
+			array(
+				'element' => 'body',
+				'property' => 'background',
+				'suffix' => '!important',
+				'prefix' => 'fixed',
+			),
+		),
+	) );*/
+
+	/* Continue with the field to change color */
+	Kirki::add_field( 'realestatepro_settings', array(
+		'type'        => 'color',
+		'settings'    => 'realestatepro_background_color',
+		'label'       => esc_attr__( 'Color de fondo del Sitio', 'realestatepro' ),
+		'default'     => '#cacaca',
+		'section'     => 'realestatepro_settings',
+		'description' => esc_attr__( 'Selecciona el color que deseas que aparezca como el fondo del sitio.', 'realestatepro' ),
+		'priority'    => 11,
+		'output' => array(
+			array(
+				'element' => 'body',
+				'property' => 'background',
+			),
+		),
+	) );
 
 	/* Add a field to add analytics tracking code to the footer */
 	Kirki::add_field( 'realestatepro_settings', array(
@@ -139,7 +175,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'section'     => 'realestatepro_settings',
 		'help'		  => esc_attr__( 'Ingresa cualquier código de análisis, por ejemplo Google Analytics.', 'realestatepro' ),
 		'description' => esc_attr__( 'Ingresa el código de análisis.', 'realestatepro' ),
-		'priority'    => 10,
+		'priority'    => 12,
 			'choices'     => array(
 	        'language' => 'javascript',
 	        'theme'    => 'default',
@@ -155,7 +191,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'section'     => 'realestatepro_settings',
 		'help'		  => esc_attr__( 'Ingresa cualquier código de rastreo, por ejemplo Google AdWords.', 'realestatepro' ),
 		'description' => esc_attr__( 'Ingresa el código de rastreo.', 'realestatepro' ),
-		'priority'    => 10,
+		'priority'    => 12,
 			'choices'     => array(
 	        'language' => 'javascript',
 	        'theme'    => 'default',
