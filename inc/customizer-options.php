@@ -307,12 +307,16 @@ if ( class_exists( 'Kirki' ) ) {
 		'label'       => esc_attr__( 'Color de Fondo de los botones', 'realestatepro' ),
 		'description' => esc_attr__( 'Selecciona un color para el fondo de los botones en el sitio.', 'realestatepro' ),
 		'section'     => 'realestatepro_button_colors',
-		'default'     => '#494A4B',
+		'default'     => '#5d0208',
 		'priority'    => 10,
 		'output'      => array(
 			array(
 				'element'  => '.standard-button,.search-button,.mortgage-calculator-button',
 				'property' => 'background-color',
+			),
+			array(
+				'element' => 'scrollUpButton',
+				'property' => 'background'
 			),
 		),
 		'transport'   => 'postMessage',
@@ -435,7 +439,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'label'       => esc_attr__( 'Color de Fondo del Menú de Navegación', 'realestatepro' ),
 		'description' => esc_attr__( 'Escoge el color del fondo del menú de navegación.', 'realestatepro' ),
 		'section'     => 'realestatepro_nav_menu',
-		'default'     => '#3399ff', 
+		'default'     => '#FFFFFF',
 		'priority'    => 10,
 		'output'      => array(
 			array(
@@ -461,7 +465,7 @@ if ( class_exists( 'Kirki' ) ) {
 		'label'       => esc_attr__( 'Color de Fondo del Rollover del Menú de Navegación', 'realestatepro' ),
 		'description' => esc_attr__( 'Escoge el color del fondo del Rollover del menú de navegación.', 'realestatepro' ),
 		'section'     => 'realestatepro_nav_menu',
-		'default'     => '#1E8EFF',
+		'default'     => '#cacaca',
 		'priority'    => 10,
 		'output'      => array(
 			array(
@@ -486,10 +490,10 @@ if ( class_exists( 'Kirki' ) ) {
 	Kirki::add_field( 'realestatepro_settings', array(
 		'type'        => 'color',
 		'settings'    => 'realestatepro_nav_menu_active_color',
-		'label'       => esc_attr__( 'Nav Menu Active Background Color', 'realestatepro' ),
-		'description' => esc_attr__( 'Choose the color for the background of the navigation menu active state.', 'realestatepro' ),
+		'label'       => esc_attr__( 'Color de Fondo del Menú Activo', 'realestatepro' ),
+		'description' => esc_attr__( 'Escoge el color thel fondo para la sección del menú que se encuentre activa.', 'realestatepro' ),
 		'section'     => 'realestatepro_nav_menu',
-		'default'     => '#1E8EFF', 
+		'default'     => '#808080',
 		'priority'    => 10,
 		'output'      => array(
 			array(
@@ -521,19 +525,19 @@ if ( class_exists( 'Kirki' ) ) {
 	    'choices'     => array(
 	        'fade' 					=> __( 'Desvanecer', 'realestatepro' ),
 	        'fold' 					=> __( 'Doblar', 'realestatepro' ),
-	        'sliceDown' 			=> __( 'Cortar Abajo', 'realestatepro' ),
-	        'sliceDownLeft'			=> __( 'Cortar Abajo Izquierda', 'realestatepro' ),
- 			'sliceUp' 				=> __( 'Cortar Arriba', 'realestatepro' ),
-	        'sliceUpLeft' 			=> __( 'Cortar Arriba Izquierda', 'realestatepro' ),
- 			'sliceUpDown' 			=> __( 'Cortar Arriba Abajo', 'realestatepro' ),
-	        'sliceUpDownLeft' 		=> __( 'Cortar Arriba Abajo Izquierda', 'realestatepro' ),
- 			'slideInRight' 			=> __( 'Cortar en Derecha', 'realestatepro' ),
-	        'slideInLeft' 			=> __( 'Cortar en Izquierda', 'realestatepro' ),
- 			'boxRandom' 			=> __( 'Box Aleatorio', 'realestatepro' ),
-	        'boxRain' 				=> __( 'Lluvia Box', 'realestatepro' ),
- 			'boxRainReverse' 		=> __( 'Lluvia Box Reversa', 'realestatepro' ),
-	        'boxRainGrow' 			=> __( 'Lluvia Box Crecer', 'realestatepro' ),
- 			'boxRainGrowReverse' 	=> __( 'Lluvia Box Crecer Reversa', 'realestatepro' ),
+	        'sliceDown' 			=> __( 'CortarAbajo', 'realestatepro' ),
+	        'sliceDownLeft'			=> __( 'CortarAbajoIzquierda', 'realestatepro' ),
+ 			'sliceUp' 				=> __( 'CortarArriba', 'realestatepro' ),
+	        'sliceUpLeft' 			=> __( 'CortarArribaIzquierda', 'realestatepro' ),
+ 			'sliceUpDown' 			=> __( 'CortarArribaAbajo', 'realestatepro' ),
+	        'sliceUpDownLeft' 		=> __( 'CortarArribaAbajoIzquierda', 'realestatepro' ),
+ 			'slideInRight' 			=> __( 'CortarEnDerecha', 'realestatepro' ),
+	        'slideInLeft' 			=> __( 'CortarEnIzquierda', 'realestatepro' ),
+ 			'boxRandom' 			=> __( 'BoxAleatorio', 'realestatepro' ),
+	        'boxRain' 				=> __( 'LluviaBox', 'realestatepro' ),
+ 			'boxRainReverse' 		=> __( 'LluviaBoxReversa', 'realestatepro' ),
+	        'boxRainGrow' 			=> __( 'LluviaBoxCrecer', 'realestatepro' ),
+ 			'boxRainGrowReverse' 	=> __( 'LluviaBoxCrecerReversa', 'realestatepro' ),
     ),
 
 	) );
