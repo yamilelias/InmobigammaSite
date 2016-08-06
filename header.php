@@ -47,7 +47,7 @@
 
 				</div>
 
-				<nav class="navbar navbar-default">
+				<nav id="nav" class="navbar navbar-default">
 
 					<div class="container">
 

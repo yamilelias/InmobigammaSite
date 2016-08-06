@@ -9,7 +9,7 @@
 					<div class="col-xs-12 col-sm-12 cols-md-12 footer-company-info">
 
 						<span><?php echo esc_html( get_theme_mod( 'realestatepro_footer_company_info', esc_attr__( '© Inmobigama, 2016. Todos los derechos reservados.', 'realestatepro' ) ) ); ?></span>
-						<a class="footer-link" href="terms-and-conditions">Términos y condiciones.</a>
+						<a class="footer-link" href="terminos-y-condiciones">Términos y condiciones.</a>
 
 					</div>
 

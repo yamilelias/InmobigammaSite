@@ -128,7 +128,7 @@
 		</div>
 		<?php endif;?>
 
-		<div class="col-xs-12 col-sm-12 col-md-12 latest-property">
+		<div class="col-xs-12 col-sm-12 col-md-12 content-margin">
 			<!--<hr>-->
 			<div class="content-block">
 				<h1>Últimas Propiedades a la Venta</h1>
@@ -143,6 +143,8 @@
 				);
 
 				$featured_buys = new WP_Query( $sale_properties );
+
+				if($featured_buys->have_posts()){
 
 				while ( $featured_buys->have_posts() ) : $featured_buys->the_post(); ?>
 
@@ -159,13 +161,17 @@
 						</div>
 				</div>
 
-				<?php endwhile;
+				<?php endwhile; } // End of 'if($featured_buys)'
+
+				else{ ?>
+					<p> No existen propiedades a la venta.</p>
+				<?php }
 
 				wp_reset_query(); ?>
 			</div>
 		</div>
 		<br/>
-		<div class="col-xs-12 col-sm-12 col-md-12 latest-property">
+		<div class="col-xs-12 col-sm-12 col-md-12 content-margin">
 
 			<div class="content-block">
 				<h1>Últimas Propiedades en Renta</h1>
@@ -180,6 +186,8 @@
 				);
 
 				$featured_buys = new WP_Query( $sale_properties );
+
+				if($featured_buys->have_posts()){
 
 				while ( $featured_buys->have_posts() ) : $featured_buys->the_post(); ?>
 
@@ -198,7 +206,11 @@
 				</div>
 
 
-				<?php endwhile;
+				<?php endwhile; } // End of 'if($featured_buys)'
+
+				else{ ?>
+					<p> No existen propiedades a la renta.</p>
+				<?php }
 
 				wp_reset_query(); ?>
 			</div>
