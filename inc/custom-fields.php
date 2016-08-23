@@ -547,7 +547,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Comodidades',
 				'name' => 'amenities',
 				'type' => 'textarea',
-				'instructions' => 'Favor de ingresar las comodidaes que esta propiedad tiene, Please enter the amenities that this property has, e.g. nearest train station, schools, parks. Once ammenity per line, upto 8 lines.',
+				'instructions' => 'Favor de ingresar las comodidaes que esta propiedad tiene, por ejemplo: cercano a paradas de camión, supermercados, parques, etc. Una comodidad por línea, hasta 8 líneas',
 				'default_value' => '',
 				'placeholder' => '',
 				'maxlength' => '',
